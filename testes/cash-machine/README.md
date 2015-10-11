@@ -3,7 +3,8 @@ Cash Machine
 
 Lenin Suarez Notes:
 ---------
-Please browse to http://localhost:8888/quero-ser-clickbus/testes/cash-machine/
+1 - Clone into you web root
+2 - Please browse to http://localhost:8888/quero-ser-clickbus/testes/cash-machine/
 
 O Problema
 ----------

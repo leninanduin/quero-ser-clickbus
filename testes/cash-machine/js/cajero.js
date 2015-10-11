@@ -5,7 +5,7 @@
 function renderDenominaciones(billetes) {
   for (var i in billetes) {
     $('#billetes_list')
-    .append('<li>$'+billetes[i].denominacion+'.00</li>');
+    .append('<li>$'+billetes[i].denominacion);
   }
   return false;
 }
@@ -29,7 +29,7 @@ function renderBilletes(billetes) {
     var billete_html = document.createElement("span");
     $(billete_html)
     .addClass('label label-success ticket')
-    .html("$"+billetes[i].denominacion+".00  x " + billetes[i].cantidad);
+    .html("$"+billetes[i].denominacion+" x " + billetes[i].cantidad);
 
     $('#result')
     .append(billete_html);
@@ -46,7 +46,7 @@ function getMoney() {
     $('#result').attr('class', 'col-md-12')
     .html(rs.result.msg)
     .addClass(rs.result.status);
-
+    $('#amount').val('');
     if (rs.result.status == 'SUCCESS') {
       renderBilletes(rs.billetes);
     }
