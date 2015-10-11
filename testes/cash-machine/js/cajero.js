@@ -1,3 +1,7 @@
+/**
+ * Render a html list of the available denominations.
+ * @param {object} billetes
+ */
 function renderDenominaciones(billetes) {
   for (var i in billetes) {
     $('#billetes_list')
@@ -6,6 +10,9 @@ function renderDenominaciones(billetes) {
   return false;
 }
 
+/**
+ * Fetch the list of denominations and renderst the.
+ */
 function getBilletes() {
   $.get('rest/list_cash', function(billetes){
     renderDenominaciones(billetes);
@@ -13,6 +20,10 @@ function getBilletes() {
   return false;
 }
 
+/**
+ * Render a set of html elements that represents the amount of tickets and his denomination.
+ * @param  {billetes} object
+ */
 function renderBilletes(billetes) {
   for (var i in billetes) {
     var billete_html = document.createElement("span");
@@ -25,6 +36,9 @@ function renderBilletes(billetes) {
   }
 }
 
+/**
+ * Send the desired cash amount and retreive the object that represents the cash machine operation.
+ */
 function getMoney() {
   $.post('rest/get_cash',{
     'amount':$('#amount').val()
