@@ -1,0 +1,38 @@
+#main {
+  width: 45%;
+  margin: 40px auto;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 15px;;
+}
+
+input {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  padding: none;
+}
+
+.ERROR {
+  color:red;
+}
+
+.SUCCESS {
+  color:blue;
+}
+
+#result {
+  font-size: 25px;
+  border-top: 1px solid gray;
+  margin: 10px 0;
+}
+
+#result .ticket {
+  display: block;
+  margin: 5px auto;
+  width: 50%;
+}

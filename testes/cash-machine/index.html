@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>$$$$$</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="js/cajero.js"></script>
+</body>
+  <div id="main" class="container">
+    <div class="row">
+      <h2>Wellcome to DineroMatic!</h2>
+      <div class="col-md-6">
+        <p>How much money do you want?</p>
+        <div id="keyboard" class="col-md-12">
+          <form onsubmit="getMoney();return false">
+            <input type="text" name="amount" id="amount" placeholder="200" maxlength="9" required >
+            <input type="button" value="1" class="number col-md-4">
+            <input type="button" value="2" class="number col-md-4">
+            <input type="button" value="3" class="number col-md-4">
+            <input type="button" value="4" class="number col-md-4">
+            <input type="button" value="5" class="number col-md-4">
+            <input type="button" value="6" class="number col-md-4">
+            <input type="button" value="7" class="number col-md-4">
+            <input type="button" value="8" class="number col-md-4">
+            <input type="button" value="9" class="number col-md-4">
+            <input type="button" value="<" id="delete" class="col-md-4">
+            <input type="button" value="0" class="number col-md-4">
+            <input type="submit" value="OK" class="col-md-4">
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><i>We have tickets of:</i></p>
+        <ul id="billetes_list"></ul>
+      </div>
+    </div>
+    <div class="row">
+      <div id="result" class="col-md-12"></div>
+    </div>
+  </div>
+</html>
